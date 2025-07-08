@@ -71,16 +71,21 @@ main {
     }
 
 footer {
-  width: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 3rem 1rem;
   background: linear-gradient(to top, #eae7e2 0%, transparent 100%);
-  padding: 3rem 1.5rem;
   text-align: center;
-  font-size: 1rem;
-  color: #666;
+  font-size: 0.95rem;
   font-family: 'EB Garamond', serif;
+  color: #666;
+  border-top: none; /* ✅ remove that unwanted grey line */
+  box-shadow: none;  /* ✅ just in case one is applied */
+  position: relative;
+  z-index: 1;
 }
 
-    .footer-content {
+.footer-content {
   max-width: 700px;
   margin: 0 auto;
 }
