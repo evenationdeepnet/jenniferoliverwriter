@@ -69,6 +69,25 @@ main {
       color: #4c3680;
       border-bottom: 1px solid #6b4f9c;
     }
+
+    .intro-text {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.95)
+  );
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+  margin: 3rem auto;
+  max-width: 800px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); /* Safari support */
+}
     
 .info-grid {
   display: grid;
@@ -258,7 +277,7 @@ footer {
   </header>
 
   <main>
-    <p>Speculative fiction writer exploring the liminal, the uncanny, and the quietly haunted. If you like stories that feel like forgotten myths stitched with moonlight and memory, you are very welcome here.</p>
+   <p class="intro-text">Speculative fiction writer exploring the liminal, the uncanny, and the quietly haunted. If you like stories that feel like forgotten myths stitched with moonlight and memory, you are very welcome here.</p>
 
     <h1 class="fade-in">Published Work</h1>
     <div class="published-box fade-in">
