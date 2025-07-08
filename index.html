@@ -70,6 +70,34 @@ main {
       border-bottom: 1px solid #6b4f9c;
     }
 
+    .info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.info-column {
+  flex: 1 1 30%;
+  min-width: 280px;
+}
+
+.info-column h2 {
+  font-family: 'EB Garamond', serif;
+}
+
+@media (max-width: 900px) {
+  .info-grid {
+    flex-direction: column;
+  }
+
+  .info-column {
+    width: 100%;
+  }
+}
+
 footer {
   width: 100vw;
   margin: 0;
@@ -241,20 +269,27 @@ footer {
 
 <div class="divider"><span>✦</span></div>
 
-    <h2 class="fade-in">About</h2>
-    <p class="fade-in">Jennifer Oliver writes eerie speculative fiction from the Dorset coast. Her work draws from folklore, soft sci-fi, and emotional horror. She’s endlessly fascinated by memory, myth, and the unspoken.</p>
+<div class="info-grid fade-in">
+  <section class="info-column">
+    <h2>About</h2>
+    <p>Jennifer Oliver writes eerie speculative fiction from the Dorset coast. Her work draws from folklore, soft sci-fi, and emotional horror. She’s endlessly fascinated by memory, myth, and the unspoken.</p>
+  </section>
 
-    <h2 class="fade-in">Elsewhere</h2>
-<div class="button-stack fade-in">
-  <a class="wide-button" href="https://jenniferoliverwriter.substack.com/" target="_blank">Substack</a>
-  <a class="wide-button" href="mailto:your.joliverdesigns@gmail.com">Email</a>
+  <section class="info-column">
+    <h2>Elsewhere</h2>
+    <div class="button-stack">
+      <a class="wide-button" href="https://jenniferoliverwriter.substack.com/" target="_blank">Substack</a>
+      <a class="wide-button" href="mailto:your.joliverdesigns@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <section class="info-column">
+    <div class="now-box" style="margin-top: 0;">
+      <h2 style="margin-top: 0;">Now Writing</h2>
+      <p><em>Revising <strong>PP</strong>, my cyberpunk novel about identity, rebellion, and ghostcode in the underground ruins of tomorrow’s London.</em></p>
+    </div>
+  </section>
 </div>
-
-    <section class="now-box fade-in">
-      <h2 style="margin-top: 0; font-family: 'EB Garamond', serif; font-weight: 500;">Now Writing</h2>
-      <p>Revising <strong><em>PP</em></strong>, my cyberpunk novel about identity, rebellion, and ghostcode in the underground ruins of tomorrow’s London.</p>
-    </section>
-    <div class="divider"><span>✦</span></div>
   </main>
 
 <footer>
