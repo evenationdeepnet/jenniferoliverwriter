@@ -196,6 +196,19 @@ header {
 #moon-phase:hover {
   transform: scale(1.4) rotate(10deg);
 }
+
+    @media (max-width: 768px) {
+  header {
+    background-position: top center;
+    background-size: cover;
+    height: 400px; /* Slightly shorter for mobile */
+  }
+
+  header div {
+    font-size: 1.4rem;
+    padding: 0.75rem 1.25rem;
+  }
+}
   </style>
 </head>
 <body>
