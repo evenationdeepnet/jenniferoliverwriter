@@ -71,13 +71,19 @@ main {
     }
 
 footer {
+  width: 100%;
   background: linear-gradient(to top, #eae7e2 0%, transparent 100%);
   border-top: 1px solid #ddd;
-  padding: 3rem 1rem;
+  padding: 3rem 1.5rem;
   text-align: center;
   font-size: 0.95rem;
   color: #666;
   font-family: 'EB Garamond', serif;
+}
+
+    .footer-content {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
     p {
@@ -259,10 +265,13 @@ footer {
     <div class="divider"><span>✦</span></div>
   </main>
 
-  <footer>
-    &copy; Jennifer Oliver 2025 — built with stardust & GitHub Pages. What's the moon up to? Let's see: 
-    <span id="moon-phase" style="margin-left: 8px;">🌑</span>
-  </footer>
+<footer>
+  <div class="footer-divider">✦</div>
+  <div class="footer-content">
+    &copy; Jennifer Oliver 2025 — built with stardust & GitHub Pages. What’s the moon up to? Let’s see:
+    <span id="moon-phase">🌑</span>
+  </div>
+</footer>
 
   <script>
     function getMoonPhase() {
