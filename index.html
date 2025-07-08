@@ -244,8 +244,9 @@ header {
   }
 
   animateParticles();
+</script>
 
-    <script>
+      <script>
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -258,7 +259,6 @@ header {
   document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
   });
-</script>
 </script>
 </body>
 </html>
